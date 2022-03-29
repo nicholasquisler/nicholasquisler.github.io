@@ -1,3 +1,41 @@
-footer {
-    font-family: cursive;
+html {
+    background-image: linear-gradient(to bottom, grey, blanchedalmond);
+}
+
+#top div{
+    float: right;
+    display:inline;
+    background-image: radial-gradient(blanchedalmond, grey);
+    width: fit-content;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px 20px;
+    border: 1px solid black;
+
+}
+
+#top {
+    background-color: white;
+    height: 60px;
+    margin-bottom: 36px;
+}
+
+.img {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    object-position: center center;
+    background-color: white;
+}
+
+#sign {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    color: darkviolet;
+}
+
+a {
+    color: blue;
 }
