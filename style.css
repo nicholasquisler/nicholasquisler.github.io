@@ -1,41 +1,97 @@
-html {
-    background-image: linear-gradient(to bottom, grey, blanchedalmond);
-}
+/* Universal Code */
 
-#top div{
-    float: right;
-    display:inline;
-    background-image: radial-gradient(blanchedalmond, grey);
-    width: fit-content;
+/* Navagation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
     text-align: center;
-    vertical-align: middle;
-    padding: 30px 20px;
-    border: 1px solid black;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  nav li a:hover {
+    background-color: #111;
+  }
+
+
+/* Header */
+
+/* Body */
+
+    /* Projects */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+      
+div.gallery:hover {
+    border: 1px solid #777;
+}
+      
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+      
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+    /* Bio */
+.biogrt {
+    columns: 2;
+    background-image: linear-gradient(to right, 
+    darkblue 0%, 
+    darkblue 50%, 
+    skyblue 50%, 
+    skyblue 100%
+  );
+}
+
+.biogrt img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#biotxt {
+    text-align: center;
+    display: inline-block;
 
 }
 
-#top {
-    background-color: white;
-    height: 60px;
-    margin-bottom: 36px;
-}
 
-.img {
-    width: auto;
-    height: 60px;
-    object-fit: contain;
-    object-position: center center;
-    background-color: white;
-}
-
-#sign {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a:hover {
-    color: darkviolet;
-}
-
-a {
-    color: blue;
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    padding: 14px 16px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
 }
