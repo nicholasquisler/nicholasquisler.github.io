@@ -1,97 +1,112 @@
 /* Universal Code */
 
+html {
+  background-image: url('backgroundimg.jpg');
+}
+
 /* Navagation Bar */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    width: 100%;
-  }
-  
-  nav li {
-    float: left;
-  }
-  
-  nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  nav li a:hover {
-    background-color: #111;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
 
 
 /* Header */
 
 /* Body */
 
-    /* Projects */
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-      
-div.gallery:hover {
-    border: 1px solid #777;
-}
-      
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-      
-div.desc {
-    padding: 15px;
-    text-align: center;
+body h2 {
+background-color: #777;
 }
 
-    /* Bio */
+.title {
+  columns: 1;
+}
+
+
+
+  /* Projects */
+
+.desc {
+  background-color: #ffffff;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #000000;
+  float: left;
+  width: 180px;
+}
+    
+div.gallery:hover {
+  border: 2px solid;
+}
+    
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+    
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.ugrch, .clsproj, .cdecdy {
+columns: 1;
+background-color: #CDCDCD;
+}
+
+  /* Bio */
 .biogrt {
-    columns: 2;
-    background-image: linear-gradient(to right, 
-    darkblue 0%, 
-    darkblue 50%, 
-    skyblue 50%, 
-    skyblue 100%
-  );
+  columns: 2;
+  background-image: linear-gradient(to right, 
+  darkblue 0%, 
+  darkblue 50%, 
+  skyblue 50%, 
+  skyblue 100%
+);
 }
 
 .biogrt img {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #biotxt {
-    text-align: center;
-    display: inline-block;
+  text-align: center;
+  display: inline-block;
 
 }
 
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    text-align: left;
-    padding: 14px 16px;
-    position: static;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
+  background-color: #333;
+  color: #FFFFFF;
+  padding: 14px 16px;
+  position: static;
 }
