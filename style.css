@@ -83,9 +83,8 @@ background-color: #CDCDCD;
   background-image: linear-gradient(to right, 
   darkblue 0%, 
   darkblue 50%, 
-  skyblue 50%, 
-  skyblue 100%
-);
+  #87ceeb 50%, 
+  #87ceeb 100%);
 }
 
 .biogrt img {
@@ -99,7 +98,7 @@ background-color: #CDCDCD;
 #biotxt {
   text-align: center;
   display: inline-block;
-
+  margin: 20px;
 }
 
 
