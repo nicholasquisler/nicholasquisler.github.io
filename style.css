@@ -2,6 +2,7 @@
 
 html {
   background-image: url('backgroundimg.jpg');
+  opacity: 0.9;
 }
 
 /* Navagation Bar */
@@ -47,15 +48,21 @@ background-color: #777;
 
   /* Projects */
 
-.desc {
-  background-color: #ffffff;
+#projgrid {
+  display: inline-grid;
+  grid-template-columns: 3fr 1fr;
 }
 
-div.gallery {
-  margin: 5px;
+.desc {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.gallery {
   border: 1px solid #000000;
-  float: left;
   width: 180px;
+  display: inline-flex;
+  min-height: 100px;
 }
     
 div.gallery:hover {
@@ -66,40 +73,35 @@ div.gallery img {
   width: 100%;
   height: auto;
 }
-    
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 
 .ugrch, .clsproj, .cdecdy {
-columns: 1;
 background-color: #CDCDCD;
 }
 
   /* Bio */
-.biogrt {
-  columns: 2;
-  background-image: linear-gradient(to right, 
-  darkblue 0%, 
-  darkblue 50%, 
-  #87ceeb 50%, 
-  #87ceeb 100%);
+
+.grid-bio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 30rem;
 }
 
-.biogrt img {
-  width: 500px;
-  height: auto;
-  display: flex;
-  margin: 22px auto 22px auto;
+#imagebio {
+  background-color: #000000;
 }
 
-#biotxt {
-  text-align: center;
-  display: inline-block;
-  margin: 50px 30px 20px 30px;
-  line-height: 35px;
-  font-size: large;
+#contentbio {
+  background-color: grey;
+  font-size: 1.25rem;
+}
+
+#imagebio img {
+  height: 90%;
+  margin: 1.5rem auto;
+}
+
+#contentbio p {
+  margin: 10%;
 }
 
 /* Contact */
@@ -118,6 +120,7 @@ background-color: #CDCDCD;
 
 /* Footer */
 footer {
+  display: static;
   background-color: #333;
   color: #FFFFFF;
   padding: 14px 16px;
