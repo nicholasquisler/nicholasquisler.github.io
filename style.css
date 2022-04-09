@@ -31,6 +31,11 @@ nav li a:hover {
   background-color: #111;
 }
 
+nav .active {
+  background-color: #04AA6D;
+  color: white;
+}
+
 
 /* Header */
 
@@ -48,21 +53,15 @@ background-color: #777;
 
   /* Projects */
 
-#projgrid {
-  display: inline-grid;
-  grid-template-columns: 3fr 1fr;
-}
-
 .desc {
   background-color: #ffffff;
-  text-align: center;
 }
 
-.gallery {
+div.gallery {
+  margin: 5px;
   border: 1px solid #000000;
+  float: left;
   width: 180px;
-  display: inline-flex;
-  min-height: 100px;
 }
     
 div.gallery:hover {
@@ -73,8 +72,14 @@ div.gallery img {
   width: 100%;
   height: auto;
 }
+    
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 
 .ugrch, .clsproj, .cdecdy {
+columns: 1;
 background-color: #CDCDCD;
 }
 
