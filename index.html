@@ -10,7 +10,8 @@
 
     </head>
     <body>        
-        <nav>
+        <nav id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <img src="me.jpg" alt="Nicholas Quisler">
             <h2>Nicholas Quisler</h2>
             <div class="navUnderLine"></div>
@@ -31,11 +32,27 @@
             </div>
         </nav>
 
+        <div id="main" class="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <script>
+            /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "300px";
+            }
+
+            /* Set the width of the sidebar to 0 */
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            } 
+        </script>
+
         <div class="about" id="about">
             <h2>About Me</h2>
             <div class="borderUnderline"></div>
             <p>I am a high honors Physics graduate who combined studies with working and other commitments. In achieving this, I have shown myself to be self-motivated, committed, and determined in achieving my goals, come what may. I have also shown practical skills, a firm sense of responsibility, and my capacity to work hard under pressure. I possess excellent verbal and written communication skills and can relate to a wide range of people, as proven by my varied work experiences: in academic research, administrivia, laboratory classes, retail, and tutoring.</p>
-            <p>After graduating, I made it my goal to become a software engineer. Using my problem-solving skills and self-motivation from being a Physics graduate, I am now learning technical skills like web foundations, building interactive websites, front-end development, back-end development, and full-stack development. With these skills, I hope to build a portfolio site to showcase how much I learned.</p>
+            <p>After graduating, I made it my goal to become a software engineer. Using my problem-solving skills and self-motivation, I am now learning technical skills like web foundations, building interactive websites, front-end development, back-end development, and full-stack development. With these skills, I hope to build a portfolio site to showcase how much I learned.</p>
         </div>
 
 <!--         <div class="skills" id="skills">
@@ -72,6 +89,7 @@
                     </a></div>
                 </div>
 
+                <div class="projectDivider"></div>
                 <h4>Undergraduate Research</h4>
                 <div class="innerds">
                     <div><a href="SMCPA - Exploring Quasars Through Their Broad Emission Line Shifts and Radio Morpholo.pdf" target="_blank">
