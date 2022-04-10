@@ -1,133 +1,357 @@
-/* Universal Code */
+/* Experimental */
+ /* The sidebar menu */
+ .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  } 
 
+
+/* Universal */
 html {
-  background-image: url('backgroundimg.jpg');
-  opacity: 0.9;
+    background-image: url("backgroundImage.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
-/* Navagation Bar */
+.about, .skills, .projects, .contact {
+    margin-left: 27.5%;
+    margin-right: 5%;
+}
+
+h2 {
+    border-top: 5px solid #5c6367;
+    padding-top: 2.5%;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.borderUnderline {
+    background-color: #3c5ca8;
+    height: 3px;
+    width: 60px;
+    margin: 10px auto;
+}
+
+p {
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+/* Nav Bar */
+
+nav {
+    align-items: center;
+    background-color: #3c5ca8;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-left: 2.5%;
+    width: 20%;
+    position: fixed;
+}
+
+nav h2 {
+    margin: 0 10px auto 10px;
+}
+
+nav a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav img {
+    height: 45%;
+    margin-top: 5%;
+    width: 45%;
+    border-radius: 100%;
+}
+
+nav .navUnderLine {
+    background-color: #fff;
+    height: 3px;
+    width: 80%;
+    margin: 0;
+    margin-bottom: 19.92px;
+}
+
+nav a p {
+    color: #fff;
+    text-decoration: underline #fff;
+}
+
+
+nav .caption {
+    margin: 0 5px;
+}
+
+nav .email {
+    display: flex;
+    align-items: center;
+}
+
+nav .emailImg {
+    color: #fff;
+    text-decoration: none;
+    font-size: x-large;
+}
+
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;;
 }
-
+  
 nav li {
-  float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 70px;
+    font-weight: 700;
 }
 
 nav li a {
-  display: block;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 70px;
 }
-
+  
 nav li a:hover {
-  background-color: #111;
+    background-color: #fff;
+    background-size: contain;
+    color: #3c5ca8;
+    width: 100%;
 }
 
-nav .active {
-  background-color: #04AA6D;
-  color: white;
+nav .contactIcons {
+    display: flex;
+}
+
+nav .linkIcons {
+    height: 40px;
+    width: 40px;
+    border-radius: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+nav .linkIcons:first-child {
+    margin-right: 10px;
+}
+
+nav .linkIcons:last-child {
+    margin-left: 10px;
+}
+  
+/* About Me */
+
+.about h2, nav h2 {
+    border-top: 0;
+}
+
+/* Skills */
+
+.skills .skillbox {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    border: 1px solid green;
+}
+
+.skills .skillbox div {
+    border: 1px solid red;
 }
 
 
-/* Header */
+/* Projects */
 
-/* Body */
-
-body h2 {
-background-color: #777;
+.innerds {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.title {
-  columns: 1;
+.innerds a {
+    text-decoration: none;
+    color: #fff;
 }
 
-
-
-  /* Projects */
-
-.desc {
-  background-color: #ffffff;
+.innerds div {
+/*     border: 1px solid #3c5ca8; */
+    width: max-content;
+    background-color: #3c5ca8;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #000000;
-  float: left;
-  width: 180px;
-}
-    
-div.gallery:hover {
-  border: 2px solid;
-}
-    
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-    
-div.desc {
-  padding: 15px;
-  text-align: center;
+.innerds div:hover {
+    border: 2px solid #3c5ca8;
 }
 
-.ugrch, .clsproj, .cdecdy {
-columns: 1;
-background-color: #CDCDCD;
-}
-
-  /* Bio */
-
-.grid-bio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 30rem;
-}
-
-#imagebio {
-  background-color: #000000;
-}
-
-#contentbio {
-  background-color: grey;
-  font-size: 1.25rem;
-}
-
-#imagebio img {
-  height: 90%;
-  margin: 1.5rem auto;
-}
-
-#contentbio p {
-  margin: 10%;
+.innerds img {
+    height: 162px; /* 9 */
+    width: 288px; /* 16 */
 }
 
 /* Contact */
-.gridone {
-  width: 40%;
-  padding: 5px 5px;
-  margin: 10px 0 10px 10px;
-  background-color: black;
-  opacity: 0.8;
-  color: seashell;
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #3c5ca8;
 }
 
-.gridone p {
-  padding-left: 5px;
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
-/* Footer */
-footer {
-  display: static;
-  background-color: #333;
-  color: #FFFFFF;
-  padding: 14px 16px;
-  position: static;
+#contact input {
+    background-color: rgba(250,250,250,0.1);
+    border: 1px solid rgba(250,250,250,1);
+    border-radius: 0px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+#contact textarea {
+    background-color: rgba(250,250,250,0.1);
+    border: 1px solid rgba(250,250,250,1);
+    border-radius: 0px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 14px;
+    height: 180px;
+    max-height: 220px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #3c5ca8;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 815px) {
+    .emailText {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 705px) {
+    h2, h3, h4, p, a {
+        font-size: 95%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .innerds {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .innerds img {
+        height: 129.6px; /* 9 */
+        width: 230.4px; /* 16 */
+    }
+}
+
+@media only screen and (max-height: 612px) {
+    nav {
+        display: none;
+    }
+
+    .about, .skills, .projects, .contact {
+        margin-left: auto;
+        margin-right: 3%;
+    }
+
 }
