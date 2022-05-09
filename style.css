@@ -1,6 +1,7 @@
 /* Universal */
 html {
-    background-image: url("backgroundImage.jpg");
+    --custom-lblue: #3c5ca8;
+    background-image: url("./images/backgroundImage.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -24,7 +25,7 @@ h2 {
 }
 
 .borderUnderline {
-    background-color: #3c5ca8;
+    background-color: var(--custom-lblue);
     height: 3px;
     width: 60px;
     margin: 10px auto;
@@ -50,9 +51,9 @@ p {
 
 
 .openbtn {
-    font-size: 20px;
+    font-size: 32px;
     cursor: pointer;
-    background-color: #3c5ca8;
+    background-color: var(--custom-lblue);
     color: white;
     border: none;
     position: fixed;
@@ -63,7 +64,7 @@ p {
 
 nav {
     align-items: center;
-    background-color: #3c5ca8;
+    background-color: var(--custom-lblue);
     border-radius: 5%;
     display: flex;
     flex-direction: column;
@@ -169,7 +170,7 @@ nav li a {
 nav li a:hover {
     background-color: #fff;
     background-size: contain;
-    color: #3c5ca8;
+    color: var(--custom-lblue);
     width: 100%;
 }
 
@@ -231,10 +232,11 @@ nav .linkIcons:last-child {
 
 .innerds div {
     width: max-content;
-    background-color: #3c5ca8;
-    border: 1px solid #3c5ca8;
+    background-color: var(--custom-lblue);
+    border: 1px solid var(--custom-lblue);
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
 }
 
 .projects .projectDivider {
@@ -251,6 +253,13 @@ nav .linkIcons:last-child {
     width: 288px; /* 16 */
 }
 
+.innerds figcaption {
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .innerds .projectDivider {
     background-color: #fff;
     height: 1px;
@@ -262,7 +271,7 @@ nav .linkIcons:last-child {
 
 input:focus, textarea:focus {
     outline: none;
-    box-shadow: 0 0 10px #3c5ca8;
+    box-shadow: 0 0 10px var(--custom-lblue);
 }
 
 fieldset {
@@ -270,7 +279,7 @@ fieldset {
     margin: 0;
 }
 
-#contact input {
+.contact input {
     background-color: rgba(250,250,250,0.1);
     border: 1px solid rgba(250,250,250,1);
     border-radius: 0px;
@@ -297,11 +306,18 @@ fieldset {
     width: 100%;
 }
 
-button {
+.contact .two-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    margin-top: 5%;
+}
+
+.contact button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff;
-    color: #3c5ca8;
+    color: var(--custom-lblue);
     font-weight: 800;
     border: none;
     cursor: pointer;
@@ -310,7 +326,7 @@ button {
 
 /* Responsive design */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 950px) {
     .innerds {
         flex-direction: column;
     }
@@ -321,12 +337,11 @@ button {
     }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 950px) {
     #mySidebar {
         width: 20%;
         align-items: center;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         margin: 5px;
         position: fixed;
@@ -338,21 +353,5 @@ button {
 
     .sidebar {
         margin-top: 1%
-    }
-}
-
-@media only screen and (min-width: 500px) and (max-width: 942px){
-    .emailText {
-        display: none;
-    }
-
-    .emailImg {
-        padding-left: 0;
-    }
-}
-
-@media only screen and (max-width: 705px) {
-    h2, h3, h4, p, a {
-        font-size: 95%;
     }
 }
