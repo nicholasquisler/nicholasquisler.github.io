@@ -18,7 +18,7 @@
 <body>
     <nav id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="./images/me.jpg" alt="Nicholas Quisler">
+        <img src="./images/me.jpg" alt="Nicholas Quisler" id="me">
         <h2>Nicholas Quisler</h2>
         <div class="navUnderLine"></div>
         <p class="caption">Full-Stack Engineer Student</p>
@@ -55,8 +55,8 @@
         /* Set the width of the sidebar to 0 */
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("mySidebar").style.height = "591.5px";
-/*             document.getElementById("mySidebar").style.display = "inline"; */
+            document.getElementById("me").style.width = "135px";
+            document.getElementById("me").style.height = "135px";
         } 
     </script>
 

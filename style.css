@@ -79,6 +79,7 @@ nav {
     transition: 0.5s;
     width: 0;
     z-index: 1;
+    white-space: nowrap;
 }
 
 nav .closebtn {
@@ -327,11 +328,17 @@ fieldset {
 @media only screen and (min-width: 950px) {
     #mySidebar {
         width: 20%;
+        height: 591.5px;
         align-items: center;
         display: flex;
         justify-content: center;
         margin: 5px;
         position: fixed;
+    }
+
+    #me {
+        height: 135px;
+        width: 135px;
     }
 
     .closebtn, .main {
