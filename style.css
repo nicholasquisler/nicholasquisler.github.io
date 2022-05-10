@@ -1,6 +1,6 @@
 /* Universal */
 html {
-    --custom-lblue: #3c5ca8;
+    --custom-lblue: rgb(60, 92, 168);
     background-image: url("./images/backgroundImage.jpg");
     background-size: cover;
     background-position: center center;
@@ -12,8 +12,8 @@ html {
 }
 
 .about, .skills, .projects, .contact {
-    margin-left: 27.5%;
-    margin-right: 5%;
+    margin-left: 22.5%;
+    margin-right: 3%;
 }
 
 h2 {
@@ -35,6 +35,7 @@ p {
     letter-spacing: 0.5px;
     line-height: 24px;
     font-size: 16px;
+    margin-top: 18.72px;
 }
 
 /* The button used to open the sidebar */
@@ -58,6 +59,7 @@ p {
     border: none;
     position: fixed;
     top:0;
+    margin-left: 0.3%;
 }
 
 /* Nav Bar */
@@ -65,13 +67,11 @@ p {
 nav {
     align-items: center;
     background-color: var(--custom-lblue);
-    border-radius: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     left: 0;
     margin: 0;
-    margin-left: 2.5%;
     min-width: 0;
     overflow-x: hidden;
     position: fixed;
@@ -83,8 +83,8 @@ nav {
 
 nav .closebtn {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 4px;
+    left: 8px;
     font-size: 36px;
   }
 
@@ -153,9 +153,12 @@ nav li {
     align-items: center;
     justify-content: center;
     border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
     height: 70px;
     font-weight: 700;
+}
+
+nav li:last-child {
+    border-bottom: 1px solid #fff;
 }
 
 nav li a {
@@ -234,15 +237,11 @@ nav .linkIcons:last-child {
 .innerds div {
     width: max-content;
     background-color: var(--custom-lblue);
-    border: 1px solid var(--custom-lblue);
+    border: 1px solid black;
+    box-shadow: 6px 6px 12px rgba(60, 92, 168, 0.4);
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 0 0 5px 5px;
-}
-
-.projects .projectDivider {
-    border: 1px solid #fff;
-    margin-top: 10px;
 }
 
 .innerds div:hover {
@@ -259,13 +258,7 @@ nav .linkIcons:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.innerds .projectDivider {
-    background-color: #fff;
-    height: 1px;
-    width: 60px;
-    margin: 10px auto;
+    font-weight: 600;
 }
 
 /* Contact */
@@ -290,7 +283,6 @@ fieldset {
     height: 40px;
     line-height: 40px;
     width: 100%;
-    padding-left: 15px;
 }
 
 #contact textarea {
@@ -303,15 +295,13 @@ fieldset {
     line-height: 40px;
     margin-bottom: 20px;
     max-height: 220px;
-    padding-left: 15px;
     width: 100%;
 }
 
 .contact .two-cols {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    margin-top: 5%;
+    margin-top: 18.72px;
 }
 
 .contact button {
@@ -328,13 +318,9 @@ fieldset {
 /* Responsive design */
 
 @media only screen and (max-width: 950px) {
-    .innerds {
-        flex-direction: column;
-    }
-
     .about, .skills, .projects, .contact {
         margin-left: auto;
-        margin-right: 3%;
+        margin-right: auto;
     }
 }
 
