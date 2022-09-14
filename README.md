@@ -10,15 +10,10 @@
 - A contact page where you can send an email directly.
 
 ### Collaborators
-I am not looking for contributers at this time.
+This is my own personal portfolio website, thus I am not looking for collaborators. Any suggestions or advice are welcome.
 
 ### TODO
-- Add more projects with a filter to sort by type.
-- When a project is hovered over it shows a description and programming language(s).
-- Fix the email icon when viewed in mobile samsung internet.
-- Add a skills page.
-- Add a footer with a link to the github respository.
-- (Possibly) Implement bootstrap for a cleaner look.
+- Open to ideas.
 
 ### Contact
 - nquisler@gmail.com
