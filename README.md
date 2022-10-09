@@ -3,6 +3,9 @@
 ### Website
 - https://nicholasquisler.github.io/
 
+### Preview
+![alt text](https://media-exp1.licdn.com/dms/image/C562DAQGvOsshKhDlEA/profile-treasury-image-shrink_480_480/0/1652581351916?e=1665892800&v=beta&t=b2x_ERdpB3F_3AitEuLOKWGIHLhoK-U8WtURlyb54eY)
+
 ### About
 - This is an online portfolio website to help showcase my skills.
 
