@@ -314,6 +314,10 @@ figcaption {
 
 /* Contact */
 
+legend {
+    text-align: left;
+}
+
 input:focus,
 textarea:focus {
     outline: none;
