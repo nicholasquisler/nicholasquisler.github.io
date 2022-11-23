@@ -1,30 +1,37 @@
-## Nicholas Quisler's Portfolio
+# Nicholas Quisler's Portfolio
 
-### Website
-- https://nicholasquisler.github.io/
+## Website
 
-### Preview
+- <https://nicholasquisler.github.io/>
+
+## Preview
+
 ![alt text](https://github.com/nicholasquisler/nicholasquisler.github.io/raw/main/images/preview.PNG)
 
-### About
+## About
+
 - This is an online portfolio website to help showcase my skills.
 
-### Features 
+## Features
+
 - Drop down open/close button for smaller screens.
 - Responsive design.
 - Links to other github projects.
 - A contact page where you can send an email directly.
 
-### Collaborators
+## Collaborators
+
 This is my own personal portfolio website, thus I am not looking for collaborators. Any suggestions or advice are welcome.
 
-### TODO
+## TODO
+
 - Open to ideas.
 
-### Contact
+## Contact
+
 - nquisler@gmail.com
 
-### License
+## License
 
 ![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)
 
